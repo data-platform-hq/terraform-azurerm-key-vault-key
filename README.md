@@ -48,10 +48,10 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_custom_key_name"></a> [custom\_key\_name](#input\_custom\_key\_name) | Specifies the custom name of the Key Vault Key | `string` | `null` | no |
-| <a name="input_custom_rotation_policy"></a> [custom\_rotation\_policy](#input\_custom\_rotation\_policy) | Map with parameters to configure Key rotation policy | <pre>object({<br>    time_before_expiry   = optional(string, "P10D")<br>    expire_after         = optional(string, "P90D")<br>    notify_before_expiry = optional(string, "P15D")<br>  })</pre> | n/a | yes |
+| <a name="input_custom_rotation_policy"></a> [custom\_rotation\_policy](#input\_custom\_rotation\_policy) | Map with parameters to configure Key rotation policy | <pre>object({<br/>    time_before_expiry   = optional(string, "P10D")<br/>    expire_after         = optional(string, "P90D")<br/>    notify_before_expiry = optional(string, "P15D")<br/>  })</pre> | n/a | yes |
 | <a name="input_default_expiration_date"></a> [default\_expiration\_date](#input\_default\_expiration\_date) | Expiration UTC datetime (Y-m-d'T'H:M:S'Z') | `string` | `null` | no |
 | <a name="input_env"></a> [env](#input\_env) | Environment name | `string` | n/a | yes |
-| <a name="input_key_opts"></a> [key\_opts](#input\_key\_opts) | JSON web key operations: (decrypt,encrypt,sign,unwrapKey,verify,wrapKey) | `list(string)` | <pre>[<br>  "decrypt",<br>  "encrypt",<br>  "sign",<br>  "unwrapKey",<br>  "verify",<br>  "wrapKey"<br>]</pre> | no |
+| <a name="input_key_opts"></a> [key\_opts](#input\_key\_opts) | JSON web key operations: (decrypt,encrypt,sign,unwrapKey,verify,wrapKey) | `list(string)` | <pre>[<br/>  "decrypt",<br/>  "encrypt",<br/>  "sign",<br/>  "unwrapKey",<br/>  "verify",<br/>  "wrapKey"<br/>]</pre> | no |
 | <a name="input_key_size"></a> [key\_size](#input\_key\_size) | Size of the RSA key to create in bytes, required for RSA & RSA-HSM: (1024 - 2048) | `number` | `2048` | no |
 | <a name="input_key_type"></a> [key\_type](#input\_key\_type) | Key Type to use for this Key Vault Key: (EC,EC-HSM,RSA,RSA-HSM) | `string` | `"RSA"` | no |
 | <a name="input_key_vault_id"></a> [key\_vault\_id](#input\_key\_vault\_id) | Key Vault ID | `string` | n/a | yes |
