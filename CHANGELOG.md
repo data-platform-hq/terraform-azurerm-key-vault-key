@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-key-vault-key/compare/v1.1.0...v1.2.0) (2025-11-07)
+
+
+### Features
+
+* upgrade Terraform required_version to v1.3 ([#5](https://github.com/data-platform-hq/terraform-azurerm-key-vault-key/issues/5)) ([7b60b1c](https://github.com/data-platform-hq/terraform-azurerm-key-vault-key/commit/7b60b1c6bdd065d01285c4112641fb20bb81343d))
+
 # [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-key-vault-key/compare/v1.0.0...v1.1.0) (2024-09-10)
 
 
